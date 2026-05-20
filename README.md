@@ -1,15 +1,21 @@
-# pocketbase
+# pocketbase-starter-kit
 
-To install dependencies:
+Scripts (from package.json):
 
-```bash
-bun install
-```
+- `bun run serve`  (alias: `bun run s`)  
+  Runs: `pocketbase serve --dir ./data/`
 
-To run:
+- `bun run clean`  (alias: `bun run c`)  
+  Runs: `rm -rf data` — deletes the ./data directory
 
-```bash
-bun run index.ts
-```
+## Download PocketBase binary
 
-This project was created using `bun init` in bun v1.3.14. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
+- Go to: <https://github.com/pocketbase/pocketbase/releases>
+- Download the file for your OS from the latest release:
+  - Windows: `pocketbase_windows_amd64.zip`
+  - macOS: `pocketbase_darwin_amd64.zip` (Intel) or `pocketbase_darwin_arm64.zip` (Apple Silicon)
+  - Linux: `pocketbase_linux_amd64.zip`
+- Extract the zip and place the `pocketbase` executable in your project folder (Windows executable: `pocketbase.exe`).
+- Optional — add to PATH:
+  - Windows: add the folder containing `pocketbase.exe` to your PATH environment variable (restart terminals).
+  - macOS/Linux: move the executable to `/usr/local/bin/` or add its folder to PATH (ensure `chmod +x pocketbase`).
