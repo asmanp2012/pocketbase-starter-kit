@@ -1,5 +1,5 @@
 {
-  "name": "pocketbase",
+  "name": "pocketbase-starter-kit",
   "module": "index.ts",
   "type": "module",
   "private": true,
