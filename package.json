@@ -3,6 +3,12 @@
   "module": "index.ts",
   "type": "module",
   "private": true,
+  "scripts": {
+    "s": "bun run serve",
+    "c": "bun run clean",
+    "serve": "pocketbase serve --dir ./data/",
+    "clean": "rm -rf data"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
